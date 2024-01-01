@@ -6,7 +6,7 @@ const Player = ({ winner, next }) => {
       {winner ? (
         <div>Winner is {winner}</div>
       ) : (
-        <div className="bg-slate-800 text-lg text-white p-4 font-serif">
+        <div className="bg-slate-800 text-lg font-serif text-white p-4  m-6">
           Next Player : {next ? "X" : "O"}
         </div>
       )}

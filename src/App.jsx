@@ -54,8 +54,10 @@ const App = () => {
   };
   const winner = calculateWinner(history[currentStep]);
   return (
-    <main className="flex">
-      <div className="flex flex-col justify-start items-start m-4">
+    <main className="p-16 m-6 bg-orange-300 border rounded-lg border-slate-950 flex justify-center items-center">
+      <h1 className="font-bold text-3xl mx-6">Tic-Tac-Toe</h1>
+
+      <div className="flex flex-col justify-between items-center m-4">
         <Player winner={winner} next={isXNext} />
         <Dashboard
           board={history[currentStep]}
